@@ -1,3 +1,14 @@
+// [Mã câu hỏi (qCode): Iu4fnLNi].  Một chương trình server cho phép giao tiếp qua giao thức UDP tại cổng 2207. Yêu cầu là xây dựng một chương trình client trao đổi thông tin với server theo kịch bản:
+// a. Gửi thông điệp là một chuỗi chứa mã sinh viên và mã câu hỏi theo định dạng ";studentCode;qCode".
+// Ví dụ: ";B15DCCN010;D3F9A7B8"
+// b. Nhận thông điệp là một chuỗi từ server theo định dạng "requestId;a;b", với:
+// •	requestId là chuỗi ngẫu nhiên duy nhất.
+// •	a và b là chuỗi thể hiện hai số nguyên lớn (hơn hoặc bằng 10 chữ số).
+// Ví dụ: "X1Y2Z3;9876543210;123456789"
+// c. Tính tổng và hiệu của hai số a và b, gửi thông điệp lên server theo định dạng "requestId;sum;difference".Ví dụ: 
+// Nếu nhận được "X1Y2Z3;9876543210,123456789", tổng là 9999999999 và hiệu là 9753086421. Kết quả gửi lại sẽ là "X1Y2Z3;9999999999,9753086421".
+// d. Đóng socket và kết thúc chương trình
+
 import java.math.BigInteger;
 import java.net.*;
 import java.nio.charset.StandardCharsets;
@@ -51,3 +62,4 @@ public class Iu4fnLNi {
         socket.close();
     }
 }
+

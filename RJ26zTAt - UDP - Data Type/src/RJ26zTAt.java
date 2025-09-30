@@ -1,4 +1,5 @@
-// [Mã câu hỏi (qCode): RJ26zTAt].  Một chương trình server cho phép giao tiếp qua giao thức UDP tại cổng 2207. Yêu cầu là xây dựng một chương trình client trao đổi thông tin với server theo kịch bản:
+// [Mã câu hỏi (qCode): RJ26zTAt].  Một chương trình server cho phép giao tiếp qua giao thức UDP tại cổng 2207. 
+//Yêu cầu là xây dựng một chương trình client trao đổi thông tin với server theo kịch bản:
 // a.	Gửi thông điệp là một chuỗi chứa mã sinh viên và mã câu hỏi theo định dạng “;studentCode;qCode”. Ví dụ: “;B15DCCN001;DC73CA2E”
 // b.	Nhận thông điệp là một chuỗi từ server theo định dạng “requestId;a1,a2,...,a50” 
 // -	requestId là chuỗi ngẫu nhiên duy nhất
@@ -53,4 +54,5 @@ public class RJ26zTAt {
         socket.close();
     }
 }
+
 
